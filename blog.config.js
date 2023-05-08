@@ -12,7 +12,7 @@ const BLOG = {
   darkBackground: '#18181B', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy this blog in a folder
   since: 2018, // If leave this empty, current year will be used.
-  postsPerPage: 8,
+  postsPerPage: 7,
   sortByDate: true,
   showSummary: false,
   showAbout: true,
@@ -23,25 +23,19 @@ const BLOG = {
   socialLink: 'https://twitter.com/Lucky_Brick',
   seo: {
     keywords: ['Blog', 'Website', 'Notion','博客','建站'],
-    googleSiteVerification: '', // Remove the value or replace it with your own google site verification code
+    googleSiteVerification: '3hp6USRCXUH15GJFer1s4GhSfJoHbv6BGbVq2g25VyU', 
   },
   notionPageId:
-    process.env.NOTION_PAGE_ID || 'd3a1074627994f1b8475de6a919cb09c', // DO NOT CHANGE THIS！！！
-  notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
+    process.env.NOTION_PAGE_ID, 
+  notionAccessToken: process.env.NOTION_ACCESS_TOKEN, 
   analytics: {
-    provider: 'ga', // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.
-    ackeeConfig: {
-      tracker: '', // e.g 'https://ackee.craigary.net/tracker.js'
-      dataAckeeServer: '', // e.g https://ackee.craigary.net , don't end with a slash
-      domainId: '', // e.g '0e2257a8-54d4-4847-91a1-0311ea48cc7b'
-    },
+    provider: 'ga', 
     gaConfig: {
-      measurementId: 'G-BP7YB3X3KH', // e.g: G-XXXXXXXXXX
+      measurementId: 'G-BP7YB3X3KH', 
     },
   },
   comment: {
-    // support provider: gitalk, utterances, cusdis
-    provider: '', // leave it empty if you don't need any comment plugin
+    provider: 'cusdis', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
       repo: '', // The repository of store comments
       owner: '',
@@ -54,7 +48,7 @@ const BLOG = {
       repo: '',
     },
     cusdisConfig: {
-      appId: '', // data-app-id
+      appId: 'fb3b3049-f527-4a1d-9b65-63493d4e003e', // data-app-id
       host: 'https://cusdis.com', // data-host, change this if you're using self-hosted version
       scriptSrc: 'https://cusdis.com/js/cusdis.es.js', // change this if you're using self-hosted version
     },
