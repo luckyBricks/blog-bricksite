@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "type": "signalRTrigger",
+      "name": "invocation",
+      "hubName": "serverless",
+      "category": "messages",
+      "event": "NewViewer",
+      "parameterNames": [
+        "message"
+      ],
+      "direction": "in"
+    },
+    {
+      "type": "signalR",
+      "name": "updateDiv",
+      "hubName": "serverless",
+      "connectionStringSetting": "AzureSignalRConnectionString",
+      "direction": "out"
+    }
+  ]
+}
