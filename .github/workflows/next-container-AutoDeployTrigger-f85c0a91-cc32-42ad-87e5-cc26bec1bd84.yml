@@ -10,6 +10,10 @@ on:
     - '**'
     - '.github/workflows/next-container-AutoDeployTrigger-f85c0a91-cc32-42ad-87e5-cc26bec1bd84.yml'
 
+  # Automatically trigger workflow at 19:00 UTC (3AM UTC+8) every day
+  schedule:
+    - cron: "0 19 * * *"
+
   # Allow mannually trigger 
   workflow_dispatch:      
 
@@ -35,7 +39,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: registry.hub.docker.com/bricks9711/blog-bricksite:${{ github.sha }}
+          tags: registry.hub.docker.com/bricks9711/blog-bricksite:prod
           file: ./Dockerfile
           context: ./
 
@@ -57,4 +61,4 @@ jobs:
           inlineScript: |
             az config set extension.use_dynamic_install=yes_without_prompt
             az containerapp registry set -n next-container -g blog-bricksite --server registry.hub.docker.com --username  ${{ secrets.NEXTCONTAINER_REGISTRY_USERNAME }} --password ${{ secrets.NEXTCONTAINER_REGISTRY_PASSWORD }}
-            az containerapp update -n next-container -g blog-bricksite --image registry.hub.docker.com/bricks9711/blog-bricksite:${{ github.sha }}
+            az containerapp update -n next-container -g blog-bricksite --image registry.hub.docker.com/bricks9711/blog-bricksite:prod
