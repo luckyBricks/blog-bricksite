@@ -5,6 +5,6 @@ Notion-powered blog based on [nobelium](https://github.com/craigary/nobelium) em
 Provided on https://blog.bricksite.cn, empowered by **Azure App Service**
 
 ```bash
-docker build . -t blog-bricksite
+docker build -t bricks9711/blog-bricksite .
 docker run -p 3000:3000 blog-bricksite
 ```

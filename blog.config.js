@@ -20,7 +20,7 @@ const BLOG = {
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   prismjs_cdn: '', // default is cloudflare, if slow you can set 'https://npm.elemecdn.com/prismjs@1.29.0/components/'
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
-  socialLink: 'https://twitter.com/Lucky_Brick',
+  socialLink: 'https://github.com/luckyBricks',
   seo: {
     keywords: ['Blog', 'Website', 'Notion','博客','建站'],
     googleSiteVerification: '3hp6USRCXUH15GJFer1s4GhSfJoHbv6BGbVq2g25VyU', 
