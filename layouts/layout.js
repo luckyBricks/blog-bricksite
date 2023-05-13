@@ -68,6 +68,13 @@ const mapPageUrl = (id) => {
   return 'https://www.notion.so/' + id.replace(/-/g, '');
 };
 
+const mapImageUrl = (url) => { 
+  if (url.search(/blog-bricksite-1257393063/i) === -1) {
+    url =  'https://cdn.bricksite.cn/bricksblog/plain/' + url;
+  }
+  return url
+}
+
 const Layout = ({
   children,
   blockMap,
@@ -131,6 +138,7 @@ const Layout = ({
                 Collection,
               }}
               mapPageUrl={mapPageUrl}
+              mapImageUrl={mapImageUrl}
             />
             <PrismLoader />
           </div>
