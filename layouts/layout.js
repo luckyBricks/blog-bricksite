@@ -69,10 +69,11 @@ const mapPageUrl = (id) => {
 };
 
 const mapImageUrl = (url) => { 
-  if (url.search(/blog-bricksite-1257393063/i) === -1) {
-    url =  'https://cdn.bricksite.cn/bricksblog/plain/' + url;
+  let urlStr = url.toString();
+  if (urlStr.search(/blog-bricksite-1257393063/i) === -1) {
+    urlStr =  'https://cdn.bricksite.cn/bricksblog/plain/' + urlStr;
   }
-  return url
+  return urlStr
 }
 
 const Layout = ({
