@@ -68,13 +68,13 @@ const mapPageUrl = (id) => {
   return 'https://www.notion.so/' + id.replace(/-/g, '');
 };
 
-const mapImageUrl = (url) => { 
+const mapImageUrl = (url) => {
   let urlStr = url.toString();
   if (urlStr.search(/blog-bricksite-1257393063/i) === -1) {
-    urlStr =  'https://cdn.bricksite.cn/bricksblog/plain/' + urlStr;
+    urlStr = 'https://cdn.bricksite.cn/bricksblog/plain/' + urlStr;
   }
-  return urlStr
-}
+  return urlStr;
+};
 
 const Layout = ({
   children,
