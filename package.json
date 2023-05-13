@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
-    "start": "next start",
+    "start": "node server.js",
+    "devstart": "next start",
     "lint": "next lint",
     "prettier": "prettier --write ."
   },
