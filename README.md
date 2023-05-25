@@ -2,7 +2,7 @@
 
 Notion-powered blog based on [nobelium](https://github.com/craigary/nobelium), including more features with modern tech stacks.
 
-Provided on https://blog.bricksite.cn, empowered by**Azure Static Wen App**
+Provided on https://blog.bricksite.cn, empowered by **Azure Static Web App**
 
 ```bash
 docker build -t bricks9711/blog-bricksite:prod  .
