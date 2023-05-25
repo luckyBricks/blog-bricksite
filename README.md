@@ -1,8 +1,8 @@
 # blog.bricksite.cn repo
 
-Notion-powered blog based on [nobelium](https://github.com/craigary/nobelium) empowered with modern tech stacks.
+Notion-powered blog based on [nobelium](https://github.com/craigary/nobelium), including more features with modern tech stacks.
 
-Provided on https://blog.bricksite.cn, empowered by **Azure App Service**
+Provided on https://blog.bricksite.cn, empowered by**Azure Static Wen App**
 
 ```bash
 docker build -t bricks9711/blog-bricksite:prod  .
