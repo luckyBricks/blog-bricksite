@@ -5,6 +5,7 @@ const nextConfig = {
     STATIC_URL: isProd ? process.env.STATIC_URL : '',
   },
   assetPrefix: isProd ? process.env.STATIC_URL : '',
+  transpilePackages: ['jinrishici'],
   images: {
     domains: [
       'gravatar.com',

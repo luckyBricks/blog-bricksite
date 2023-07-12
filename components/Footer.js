@@ -1,4 +1,5 @@
 import BLOG from '@/blog.config';
+import Poem from './Poem';
 const Footer = ({ fullWidth }) => {
   const d = new Date();
   const y = d.getFullYear();
@@ -15,9 +16,7 @@ const Footer = ({ fullWidth }) => {
           <p>
             © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`}
           </p>
-          <a href="https://www.jinrishici.com/" className="pb-10 sm:pb-0">
-            <img src="https://v2.jinrishici.com/one.svg" alt="今日诗词" />
-          </a>
+          <Poem />
         </div>
       </div>
     </div>
