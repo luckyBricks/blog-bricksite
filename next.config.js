@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
-  env: {
-    STATIC_URL: isProd ? process.env.STATIC_URL : '',
-  },
-  assetPrefix: isProd ? process.env.STATIC_URL : '',
   transpilePackages: ['jinrishici'],
   images: {
     domains: [
