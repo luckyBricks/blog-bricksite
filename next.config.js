@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
+  env: {
+    STATIC_URL: isProd ? process.env.STATIC_URL : '',
+  },
+  assetPrefix: isProd ? process.env.STATIC_URL : '',
   images: {
     domains: [
       'gravatar.com',
@@ -8,7 +13,7 @@ const nextConfig = {
       'images.unsplash.com',
       'pbs.twimg.com',
       's3.us-west-2.amazonaws.com',
-    ]
+    ],
   },
   eslint: {
     dirs: ['components', 'layouts', 'lib', 'pages'],
