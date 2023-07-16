@@ -85,6 +85,7 @@ const Layout = ({
 }) => {
   const locale = useLocale();
   const router = useRouter();
+  const imgurlbkg = 'https://www.dmoe.cc/random.php';
   return (
     <Container
       layout="blog"
@@ -95,39 +96,46 @@ const Layout = ({
       fullWidth={fullWidth}
     >
       <article>
-        <h1 className="font-title font-bold text-3xl text-black dark:text-white">
-          {frontMatter.title}
-        </h1>
-        {frontMatter.type[0] !== 'Page' && (
-          <nav className="flex mt-7 items-start text-gray-500 dark:text-gray-400">
-            <div className="flex mb-4">
-              <a href={BLOG.socialLink || '#'} className="flex">
-                <Image
-                  alt={BLOG.author}
-                  width={24}
-                  height={24}
-                  src={`https://cdn.bricksite.cn/bricksblog/plain/https://gravatar.com/avatar/${emailHash}`}
-                  className="rounded-full"
-                />
-                <p className="ml-2 md:block">{BLOG.author}</p>
-              </a>
-              <span className="block">&nbsp;/&nbsp;</span>
-            </div>
-            <div className="mr-2 mb-4 md:ml-0">
-              {formatDate(
-                frontMatter?.date?.start_date || frontMatter.createdTime,
-                BLOG.lang
-              )}
-            </div>
-            {frontMatter.tags && (
-              <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags">
-                {frontMatter.tags.map((tag) => (
-                  <TagItem key={tag} tag={tag} />
-                ))}
-              </div>
+        <div
+          className="bg-fixed h-96 bg-center bg-contain flex flex-col items-start justify-end"
+          style={{ backgroundImage: `url(${imgurlbkg}` }}
+        >
+          <div className="backdrop-blur-lg py-3 px-2 w-full">
+            <h1 className="font-title font-bold text-3xl text-black dark:text-white">
+              {frontMatter.title}
+            </h1>
+            {frontMatter.type[0] !== 'Page' && (
+              <nav className="flex mt-7 items-start text-gray-500 dark:text-gray-400">
+                <div className="flex">
+                  <a href={BLOG.socialLink || '#'} className="flex">
+                    <Image
+                      alt={BLOG.author}
+                      width={24}
+                      height={24}
+                      src={`https://cdn.bricksite.cn/bricksblog/plain/https://gravatar.com/avatar/${emailHash}`}
+                      className="rounded-full"
+                    />
+                    <p className="ml-2 md:block">{BLOG.author}</p>
+                  </a>
+                  <span className="block">&nbsp;/&nbsp;</span>
+                </div>
+                <div className="mr-2 md:ml-0">
+                  {formatDate(
+                    frontMatter?.date?.start_date || frontMatter.createdTime,
+                    BLOG.lang
+                  )}
+                </div>
+                {frontMatter.tags && (
+                  <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags">
+                    {frontMatter.tags.map((tag) => (
+                      <TagItem key={tag} tag={tag} />
+                    ))}
+                  </div>
+                )}
+              </nav>
             )}
-          </nav>
-        )}
+          </div>
+        </div>
         {children}
         {blockMap && (
           <div className="-mt-4">

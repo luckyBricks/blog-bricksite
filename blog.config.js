@@ -16,22 +16,21 @@ const BLOG = {
   sortByDate: true,
   showSummary: false,
   showAbout: true,
-  showArchive: true,
+  showArchive: false,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   prismjs_cdn: '', // default is cloudflare, if slow you can set 'https://npm.elemecdn.com/prismjs@1.29.0/components/'
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
   socialLink: 'https://github.com/luckyBricks',
   seo: {
-    keywords: ['Blog', 'Website', 'Notion','博客','建站'],
-    googleSiteVerification: '3hp6USRCXUH15GJFer1s4GhSfJoHbv6BGbVq2g25VyU', 
+    keywords: ['Blog', 'Website', 'Notion', '博客', '建站'],
+    googleSiteVerification: '3hp6USRCXUH15GJFer1s4GhSfJoHbv6BGbVq2g25VyU',
   },
-  notionPageId:
-    process.env.NOTION_PAGE_ID, 
-  notionAccessToken: process.env.NOTION_ACCESS_TOKEN, 
+  notionPageId: process.env.NOTION_PAGE_ID,
+  notionAccessToken: process.env.NOTION_ACCESS_TOKEN,
   analytics: {
-    provider: 'ga', 
+    provider: 'ga',
     gaConfig: {
-      measurementId: 'G-BP7YB3X3KH', 
+      measurementId: 'G-BP7YB3X3KH',
     },
   },
   comment: {
@@ -53,7 +52,8 @@ const BLOG = {
       scriptSrc: 'https://cusdis.com/js/cusdis.es.js', // change this if you're using self-hosted version
     },
   },
-  isProd: process.env.VERCEL_ENV === 'production', // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  // isProd: process.env.VERCEL_ENV === 'production', // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  isProd: true,
 };
 // export default BLOG
 module.exports = BLOG;
