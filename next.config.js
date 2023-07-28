@@ -9,7 +9,6 @@ const nextConfig = {
       'images.unsplash.com',
       'pbs.twimg.com',
       's3.us-west-2.amazonaws.com',
-      'cdn.bricksite.cn',
     ],
   },
   eslint: {
