@@ -112,7 +112,7 @@ const Layout = ({
                       alt={BLOG.author}
                       width={24}
                       height={24}
-                      src={`https://cdn.bricksite.cn/bricksblog/plain/https://gravatar.com/avatar/${emailHash}`}
+                      src={`https://cravatar.cn/avatar/${emailHash}`}
                       className="rounded-full"
                     />
                     <p className="ml-2 md:block">{BLOG.author}</p>
@@ -147,7 +147,6 @@ const Layout = ({
                 Collection,
               }}
               mapPageUrl={mapPageUrl}
-              mapImageUrl={mapImageUrl}
             />
             <PrismLoader />
           </div>

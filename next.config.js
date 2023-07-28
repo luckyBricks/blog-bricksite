@@ -3,7 +3,7 @@ const nextConfig = {
   transpilePackages: ['jinrishici'],
   images: {
     domains: [
-      'gravatar.com',
+      'cravatar.cn',
       'www.notion.so',
       'notion.so',
       'images.unsplash.com',
