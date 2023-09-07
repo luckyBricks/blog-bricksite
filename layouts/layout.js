@@ -90,7 +90,7 @@ const Layout = ({
       <article>
         <div
           className="bg-fixed h-96 bg-center bg-contain flex flex-col items-start justify-end"
-          style={{ backgroundImage: `url(${imgurlbkg}` }}
+          style={{ backgroundImage: `url(${imgurlbkg})` }}
         >
           <div className="backdrop-blur-lg py-3 px-2 w-full">
             <h1 className="font-title font-bold text-3xl text-black dark:text-white">

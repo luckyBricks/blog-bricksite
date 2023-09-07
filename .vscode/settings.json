@@ -4,4 +4,5 @@
     ".vscode{,/**}"
   ],
   "appService.defaultWebAppToDeploy": "None",
+  "nuxt.isNuxtApp": false,
 }
