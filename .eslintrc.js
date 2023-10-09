@@ -14,9 +14,12 @@ module.exports = {
   ],
   rules: {
     'react/prop-types': 0,
-    "prettier/prettier": ["error",{
-      "endOfLine": "auto"}
-    ]
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
   settings: {
     react: {

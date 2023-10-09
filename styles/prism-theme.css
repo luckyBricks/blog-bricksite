@@ -4,7 +4,7 @@
   position: relative;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  @apply w-full rounded-lg 
+  @apply w-full rounded-lg;
 }
 
 .code-toolbar .toolbar {

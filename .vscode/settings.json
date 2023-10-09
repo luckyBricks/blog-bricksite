@@ -1,8 +1,5 @@
 {
-  "appService.zipIgnorePattern": [
-    "node_modules{,/**}",
-    ".vscode{,/**}"
-  ],
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
   "appService.defaultWebAppToDeploy": "None",
-  "nuxt.isNuxtApp": false,
+  "nuxt.isNuxtApp": false
 }
