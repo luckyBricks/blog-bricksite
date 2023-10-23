@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="224235f4-d199-4096-abb4-2e228849d51d" name="Changes" comment="switch to yarn 1">
+    <list default="true" id="224235f4-d199-4096-abb4-2e228849d51d" name="Changes" comment="split Tencent COS and the original urls">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +148,7 @@
       <workItem from="1696767280466" duration="424000" />
       <workItem from="1696767706180" duration="181000" />
       <workItem from="1696818350433" duration="2028000" />
-      <workItem from="1698046002627" duration="1708000" />
+      <workItem from="1698046002627" duration="2869000" />
     </task>
     <task id="LOCAL-00001" summary="switch to ws">
       <option name="closed" value="true" />
@@ -175,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696820364106</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="split Tencent COS and the original urls">
+      <option name="closed" value="true" />
+      <created>1698048190286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698048190286</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,18 +219,7 @@
     <MESSAGE value="switch to ws" />
     <MESSAGE value="switch to yarn 3" />
     <MESSAGE value="switch to yarn 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch to yarn 1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/layouts/layout.js</url>
-          <line>30</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="split Tencent COS and the original urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="split Tencent COS and the original urls" />
   </component>
 </project>
