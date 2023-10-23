@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Container from '@/components/Container';
 import TagItem from '@/components/TagItem';
-import { NotionRenderer } from 'react-notion-x';
+import { NotionRenderer, defaultMapImageUrl } from 'react-notion-x';
 import { Code } from 'react-notion-x/build/third-party/code';
 import BLOG from '@/blog.config';
 import formatDate from '@/lib/formatDate';
@@ -26,6 +26,15 @@ const Equation = dynamic(() =>
 
 const mapPageUrl = (id) => {
   return 'https://www.notion.so/' + id.replace(/-/g, '');
+};
+
+//split Tencent COS and the original urls
+const mapImageUrl = (imgUrl, block) => {
+  if (imgUrl.includes('myqcloud.com')) {
+    return imgUrl;
+  } else {
+    return defaultMapImageUrl(imgUrl, block);
+  }
 };
 
 const Layout = ({
@@ -99,6 +108,7 @@ const Layout = ({
                 Collection,
               }}
               mapPageUrl={mapPageUrl}
+              mapImageUrl={mapImageUrl}
             />
             <PrismLoader />
           </div>
